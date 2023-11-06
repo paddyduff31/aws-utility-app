@@ -15,7 +15,6 @@ const getAllCognitoUsers = async () => {
     }
 
     const result = await cognito.listUsers(params).promise();
-    console.log("Result:", result.Users)
     users = users.concat(result.Users);
     console.log("Users:", users.length);
     paginationToken = result.PaginationToken;
