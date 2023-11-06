@@ -69,4 +69,4 @@ const logUser = async () => {
 };
 
 
-logUser().then(() => console.log("Done"));
+UserSignUpInfo().then(() => console.log("Done"));
